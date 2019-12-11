@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>Contact Details</h1>
+    <p>144 Elbow Road</p>
+    <p>07765324454</p>
+    <p>elbow@gmail.com</p>
+    <hr>
+    <form action="mailto:alessioburgio85@gmail.com" method="post" enctype="text/plain">  <!-- action tells what happens when you click submit. Enctype ensures that the message we receive in our email does not contain weird characters (but only plain text) -->
+      <label>Your Name:</label>        <!-- We ask user to input their name -->
+      <input type="text" name="yourName" value=""><br> <!-- the "name" attribute assigns a description to the data we receive in our email: we will receive something like yourName/francis -->
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" value=""><br>
+      <label>Your Message:</label><br>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>  <!-- People can write a message here. Rows define how tall, cols define how large the area is going to be -->
+      <input type="submit" name="">
+    </form>
+  </body>
+</html>
